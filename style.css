@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --fontsize-body: 15px;
+    --font-family-body: 'Outfit', sans-serif;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    --card-background: hsl(0, 100%, 100%);
+    --card-border: none;
+    --card-border-radius: 20px;
+    --card-border-padding: 16px;
+    --card-width: 320px;
+    --card-image-border-radius: 10px;
+  }
+  
+  html {
+    font-size: var(--fontsize-body);
+    font-family: var(--font-family-body);
+  }
+  
+  body {
+    background-color: var(--slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-border-padding);
+    max-width: var(--card-width);
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+  }
+
+  .card-image {
+    width: 100%;
+    border-radius: var(--card-image-border-radius);
+  }
+
+  .card-content {
+    text-align: center;
+  }
+
+  .card-content-title {
+    font-weight: var(--font-weight-700);
+    color: var(--slate-900);
+  }
+
+  .card-content-text {
+    margin-top: 16px;
+    font-weight: var(--font-weight-400);
+    color: var(--slate-500);
+  }
+
+  
