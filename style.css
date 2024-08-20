@@ -4,7 +4,8 @@
     --slate-300: hsl(212, 45%, 89%);
     --slate-500: hsl(216, 15%, 48%);
     --slate-900: hsl(218, 44%, 22%);
-    --fontsize-body: 15px;
+    --font-size-body: 15px;
+    --font-size-h1: 22px;
     --font-family-body: 'Outfit', sans-serif;
     --font-weight-400: 400;
     --font-weight-700: 700;
@@ -12,13 +13,12 @@
     --card-background: hsl(0, 100%, 100%);
     --card-border: none;
     --card-border-radius: 20px;
-    --card-border-padding: 16px;
+    --card-padding: 16px;
     --card-width: 320px;
     --card-image-border-radius: 10px;
   }
   
   html {
-    font-size: var(--fontsize-body);
     font-family: var(--font-family-body);
   }
   
@@ -29,15 +29,16 @@
     align-items: center;
     height: 100vh;
   }
-
+  
   .card {
     background-color: var(--card-background);
     border: 1px solid var(--card-border);
     border-radius: var(--card-border-radius);
-    padding: var(--card-border-padding);
+    padding: var(--card-padding);
     max-width: var(--card-width);
     margin: 0 auto;
     box-shadow: var(--box-shadow);
+    box-sizing: border-box;;
   }
 
   .card-image {
@@ -47,17 +48,22 @@
 
   .card-content {
     text-align: center;
+    padding: var(--card-padding) 0;
   }
 
   .card-content-title {
     font-weight: var(--font-weight-700);
     color: var(--slate-900);
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-size: var(--font-size-h1);
   }
 
   .card-content-text {
-    margin-top: 16px;
+    font-size: var(--font-size-body);
     font-weight: var(--font-weight-400);
     color: var(--slate-500);
+    margin: 0;
+    padding: 0 16px;
   }
-
   
